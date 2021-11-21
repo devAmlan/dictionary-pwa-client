@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
 function Login() {
     const {setAuthuser} = useContext(AuthContext)
-    const clientid = "1075025569924-b9ic6uktt3sli8a5tg23ac5aaki43j2p.apps.googleusercontent.com"
+    const clientid = "1075025569924-qm6pbpnqsq5n3mc0ipuu7biim5mvi5k6.apps.googleusercontent.com"
     const loginSuccess = (resp)=>{
      setAuthuser(resp.profileObj)
      Axios.post('https://dictionary-pwa-server.herokuapp.com/user',
