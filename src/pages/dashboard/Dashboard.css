@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap');
+.savedword{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.savedbox{
+   width:230px;
+   min-height:230px;
+   border:none;
+   border-radius:8px;
+   text-align:center;
+   margin:10px;
+   background-color:#111827;
+   font-family: 'M PLUS Code Latin', sans-serif;
+}
+.dltbtn{
+  float:right;
+  font-size:22px;
+  margin-right:15px;
+  margin-top:10px;
+  cursor: pointer;
+  color:#059669;
+}
+.savedbox h3{
+    color:#059669;
+    padding-top:10px;
+    font-family: 'Chivo', sans-serif;
+    font-size:20px;
+}
+.savedbox p{
+    margin:5px;
+    color:#FFFFFF;
+    
+}

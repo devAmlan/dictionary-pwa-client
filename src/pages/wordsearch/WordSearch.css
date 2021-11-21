@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&display=swap');
+.searcharea{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    padding-top:100px;
+}
+.searchbar{
+    width:300px;
+    height:30px;
+    font-family: 'Chivo', sans-serif;
+    font-size:16px;
+    padding-left:10px;
+    font-weight:500;
+    outline:none;
+    border:2px solid rgb(5, 150, 105);
+    border-radius:7px;
+}
+.searcharea button{
+    width:90px;
+    height:35px;
+    margin:10px;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size:16px;
+    font-weight:900;
+    border:none;
+    border-radius:7px;
+    background-color:rgb(5, 150, 105);
+    color:#F6F6F6;
+    cursor: pointer;
+}
+.allmeanings{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   flex-wrap:wrap;
+}
+.meaningbox{
+ width:250px;
+ min-height:200px;
+ border-radius:6px;
+ background-color:#111827; 
+ border:2px solid rgb(5, 150, 105);
+ margin:10px; 
+ text-align:center;
+}
+.meaningbox p{
+ margin:7px; 
+ color:#FFFFFF;  
+}
+.add{
+ cursor:pointer;
+ font-size:24px;
+ color:rgb(5, 150, 105)
+}

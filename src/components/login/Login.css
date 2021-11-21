@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+.loginbox{
+    width:300px;
+    height:300px;
+    background-color:#111827;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:none;
+    border-radius:10px;
+    font-family: 'Noto Sans', sans-serif;
+    margin-top:100px;
+}
+
+.loginbtn{
+    background-color:#2596be !important;
+    color:#F6F6F6 !important;
+    font-size:15px !important;
+    font-family: 'Noto Sans', sans-serif !important;
+}
+.loginarea{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
