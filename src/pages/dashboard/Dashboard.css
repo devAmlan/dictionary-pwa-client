@@ -3,17 +3,18 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-wrap:wrap;
+    flex-direction:column;
 }
 .savedbox{
-   width:230px;
-   min-height:230px;
+   width:350px;
+   min-height:100px;
    border:none;
    border-radius:8px;
-   text-align:center;
-   margin:10px;
    background-color:#111827;
    font-family: 'M PLUS Code Latin', sans-serif;
+   display:flex;
+   justify-content:space-between;
+   margin:10px;
 }
 .dltbtn{
   float:right;
@@ -23,14 +24,29 @@
   cursor: pointer;
   color:#059669;
 }
-.savedbox h3{
+.worddata {
+    margin-left:10px;
+}
+.worddata h3{
     color:#059669;
-    padding-top:10px;
+    margin:5px;
     font-family: 'Chivo', sans-serif;
     font-size:20px;
 }
-.savedbox p{
+.worddata p{
     margin:5px;
-    color:#FFFFFF;
-    
+    color:#FFFFFF; 
+}
+.dltword{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:10px;
+}
+
+@media only screen and (max-width: 600px){
+    .savedbox{
+        width:250px;
+       min-height:100px;   
+    }  
 }

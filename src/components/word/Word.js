@@ -13,7 +13,7 @@ function Word({meaning,word}) {
       toast.success(servermsg)
     }
     const addword = ()=>{
-     Axios.post('http://localhost:3036/add',{word,meaning,useremail:authuser.email})
+     Axios.post('https://dictionary-pwa-server.herokuapp.com/add',{word,meaning,useremail:authuser.email})
      .then((resp)=>{
       if(resp.data){
         setServermsg(resp.data.successmsg)

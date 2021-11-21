@@ -1,13 +1,24 @@
 import React from 'react'
 import '../../pages/dashboard/Dashboard.css'
 import {MdDelete} from 'react-icons/md'
-function Savedwords({savedword,savedmeaning}) {
+import Axios from 'axios'
+function Savedwords({savedword,savedmeaning,wordid}) {
+    const deleteword = (id)=>{
+      Axios.get(`https://dictionary-pwa-server.herokuapp.com/dltword/${id}`)
+      .then((resp)=>{
+        console.log(resp.data)
+      })
+    }
     return (
         <div>
          <div className="savedbox">
+         <div className="worddata">
          <h3>{savedword}</h3>
          <p>{savedmeaning}</p>
-         <MdDelete className="dltbtn"/>
+         </div>
+         <div className="dltword">
+         <MdDelete className="dltbtn" onClick={()=>{deleteword(wordid)}}/>
+         </div>
          </div>
         </div>
     )

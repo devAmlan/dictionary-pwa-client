@@ -7,10 +7,10 @@ function Dashboard() {
    const [words,setWords] = useState([])
    const {authuser} = useContext(AuthContext)
    useEffect(() => {
-     Axios.get('http://localhost:3036/words').then((resp)=>{
+     Axios.get('https://dictionary-pwa-server.herokuapp.com/words').then((resp)=>{
       setWords(resp.data)
      })
-   }, [])
+   },[words])
     return (
         <>
         <div className="savedword">
@@ -25,6 +25,7 @@ function Dashboard() {
                      <Savedwords
                      savedword={eachword.word}
                      savedmeaning={eachword.meaning}
+                     wordid={eachword._id}
                      />
                       </>
                       :<>
