@@ -12,7 +12,10 @@ function Home() {
          {(authuser.googleId)?<WordSearch/>:<Login/>}
         </div>
         <div className="footer"><p>Devloped with <AiFillHeart style={{color:"#B91646"}}/> 
-        by amlan</p></div>
+         by 
+          <a href="https://twitter.com/AmlanjyotiSaho5" target="_blank"
+         rel="noreferrer"
+        >   Amlan</a></p></div>
         </div>
     )
 }
