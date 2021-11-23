@@ -12,7 +12,7 @@ function Mainarea() {
          <Route path="/" element={<Home/>}/>
          <Route path="/dashboard"  element={<Dashboard/>}/>
         </Routes>
-        </BrowserRouter>  
+        </BrowserRouter>
         </div>
     )
 }
