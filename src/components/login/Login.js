@@ -40,7 +40,7 @@ function Login() {
             cookiePolicy={'single_host_origin'}
             onSuccess={loginSuccess}
             onFailure={loginFailure}
-            isSignedIn={false} //will change
+            isSignedIn={true} //will change
             className="loginbtn"
             />
         </div>
